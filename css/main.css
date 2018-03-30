@@ -1,0 +1,177 @@
+*{
+	font-family: 'Dancing Script', cursive;
+}
+
+a{
+	text-decoration: none;
+	color: #000000;
+}
+
+body{
+	background: #02010a;
+}
+
+img{
+	box-shadow: 2px 2px #02010a;
+}
+
+@media (min-width: 900px){
+	header{
+		height:50px;
+	}
+	header nav{
+		float: right;
+	}
+	header h2{
+	  float: left;
+	}
+	#contenido{
+		width: 900px;
+		margin: 0 auto;
+	}
+	#secundaria{
+		display: flex;
+	}
+	#galeria{
+		width: 100%;
+		display: flex;
+	}
+	#galeria .img-scale{
+		width: 33%
+	}
+	footer{
+		display: flex;
+	}
+}
+
+@media (max-width: 899px){
+	header{
+		height:100px;
+	}
+	header nav{
+		margin: 0;
+	}
+	#contenido{
+		width: 100%;
+		margin: 0 auto;
+	}
+	#central{
+		width: 96%;
+		display: flex;
+		flex-direction: column;
+	}
+	#secundaria aside img{
+		margin: 2%;
+		width: 96%;
+		box-shadow: 2px 2px #82c3a6;
+	}
+	#galeria{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#galeria .img-scale{
+		width: 98%
+	}
+	footer{
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+header{
+	background: #5b7989;
+	color:white;
+	width:100%;
+	border-radius:10px 10px 0px 0px;
+}
+
+header h2{
+	margin: 10px;
+	text-shadow: 2px 2px #02010a;
+}
+
+header nav ul{
+	list-style: none;
+	float: left;
+	display: block;
+}
+
+header nav ul li{
+	float: left;
+	margin: 0px 10px;
+	border-bottom: 1px #ffffff solid;
+}
+
+header nav ul li.selected{
+	border-bottom: none;
+}
+
+header nav ul li a{
+	color: white;
+}
+
+#central{
+	background: #82c3a6;
+	padding: 2%;
+}
+
+#central img{
+	width: 100%;
+}
+
+#secundaria{
+	background: #d5c75f;
+	border: 1px solid #000000;
+	width: 100%;
+}
+
+#secundaria aside{
+	width: 100%
+}
+
+#secundaria aside img{
+	margin: 2%;
+	width: 96%;
+	box-shadow: 2px 2px #82c3a6;
+}
+
+#secundaria #col-izq img{
+	transition: transform 1s;
+}
+
+#secundaria #col-izq img:hover{
+	transform: rotate(10deg);
+}
+
+#secundaria #col-der img{
+	transition: transform 1s;
+}
+
+#secundaria #col-der img:hover{
+	transform:translate(10px,-5px);
+}
+
+#galeria .img-1{
+	filter:blur(10px);
+}
+
+#galeria .img-2, .img-4, .img-6{
+	filter:grayscale(100%);
+}
+
+#galeria .img-3{
+	filter:sepia(100%);
+}
+
+footer{
+	background: #C6d5c5;
+	width: 100%;
+	border-radius: 0px 0px 10px 10px;
+}
+
+footer aside{
+	margin: 10px;
+	width: 100%
+}
